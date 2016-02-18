@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name = "format-detection" content = "telephone=no">
+<title>Shift Managment</title>
+<style>
+.msg{ 
+display:none;
+position: relative;
+FONT-SIZE: 12px;
+font-family: Verdana;
+padding:10px;
+width:350px;
+background-color: #f1f1f1;
+}
+</style>
+
+<link rel="icon" href="images/favicon.png" type="image/png" />
+<link href="css/main_style.css" rel="stylesheet" type="text/css" />
+<link href="css/ddsmoothmenu-v.css" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="css/easy-responsive-tabs.css" />
+<link rel="stylesheet" href="css/jquery.sidr.light.css">
+
+<script src="js/jquery-1.10.2.min.js"></script>
+
+<!----------------TABS------------------------->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script>
+$(function() {
+$( "#tabs" ).tabs();
+});
+</script>
+
+</head>
+<body>
+
+
+<div id="wrap">
+<div id="header"></div>
+<!-- ................................................Header End........................................ -->
+<div id="clear"></div>
+<!-- ................................................Container Start........................................ -->
+<div id="container">
+<div id="left_panel">
+
+</div>
+<!--navigation-->
+
+<div id="right_panel">
+
+<div id="tabs">
+
+
+
+<ul>
+<li><a href="#tabs-1">Create Profile</a></li>
+<li><a href="#tabs-2">View Profile</a></li>
+ </ul>
+<div id="tabs-1">
+
+<fieldset>
+<table>
+<tr>
+<div id=d1 class='msg' >Profile Created</div>
+<legend>Profile Creation</legend>
+	<td><label>Name:</label></td>
+	<td><input type="text" name="Name"></td>
+</tr>
+<tr>
+	<td><label>Employee Id:</label></td>
+	<td><input class="" type="text" name="Employee" size="20"  ></td>
+</tr>
+<tr>
+<td><label>Skill Set :</label>
+<td><input type="text" name="Skill Set" size="20"></td> 
+</tr>
+<tr>
+
+<td><label>Shift Availability:</label></td>
+<td>
+		<select id="pickup_place" name="pickup_place" >
+		<option value="" selected="selected">Select One</option>
+		<option value="" >Morning</option>
+		<option value="" >Afternoon</option>
+		<option value="" >Evening</option>
+		<option value="" >Shift</option>
+		</select>
+</td>	
+</tr>
+<tr>	
+
+<td><label>Comments:</label></td>
+<td><textarea name="comments" maxlength="500"></textarea></td>
+</tr>
+<tr>
+<td><input type="button" id="b1" value='Create'></td>
+</tr>
+</table>
+	
+	</fieldset>
+	
+	 </div>
+<div id="tabs-2">
+<label>Name:</label>Srihari
+<a style="float:right" href="" alt="print">Print</a>
+<br><hr>
+
+<label>Employee Id:</label>Emp101<br><hr>
+<label>Skill Set:</label>Project Manager<br><hr>
+<label>Employee Id:</label>Emp101<br><hr>
+<label>Shift Availability:</label>Night<br><hr>
+<label>Comments:</label>Looking at main operations of their Team
+</div>
+</div>
+</div>
+<script>
+$(document).ready(function() {
+///// show /// 
+$('#b1').click(function(){
+
+if($('#b1').attr('value')=='Hide'){
+$(this).val('Create'); // change the value to Show
+$('#d1').hide();
+
+}else{
+
+$(this).val('Hide'); // change the value to Hide
+$('#d1').show();
+}
+
+})
+})
+</script>
+
+<script> 
+$(function(){
+$("#left_panel").load("navigation.html"); 
+$("#header").load("header.html"); 
+$("#footer").load("footer.html"); 
+});
+</script>
+</body>
+</html>

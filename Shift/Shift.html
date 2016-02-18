@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name = "format-detection" content = "telephone=no">
+<title>Shift Managment</title>
+<link rel="icon" href="images/favicon.png" type="image/png" />
+<link href="css/main_style.css" rel="stylesheet" type="text/css" />
+<link href="css/ddsmoothmenu-v.css" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="css/easy-responsive-tabs.css" />
+<link rel="stylesheet" href="css/jquery.sidr.light.css">
+<script src="js/jquery-1.10.2.min.js"></script>
+<!-- Include jQuery -->
+<script src="js/jquery.sidr.min.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<div id="wrap">
+<div id="header"></div>
+<!-- ................................................Header End........................................ -->
+<div id="clear"></div>
+<!-- ................................................Container Start........................................ -->
+<div id="container">
+<div id="left_panel"></div>
+<!--navigation-->
+<div id="right_panel" style="background-image="image/vg.jpg"">
+<fieldset>
+<table>
+<legend>Shift Managment</legend>
+<tr>
+<td>
+<label>Employee Id:</label></td>
+<td><input type="text" name="Name">
+</td>
+</tr>
+<tr>	
+<td>
+<label>Shift Request:</label></td>
+<td><input  type="text" name="Employee"> 
+</td>
+</tr>
+<tr>
+<td>
+
+<label>Shift Change to :</label>
+</td>
+<td>			
+<select id="pickup_place" name="pickup_place" widht="800">
+<option value="" selected="selected">Select One</option>
+<option value="" >Morning</option>
+<option value="" >Afternoon</option>
+<option value="" >Evening</option>
+<option value="" >Night</option>
+</select>
+
+</td>
+</tr>
+<tr>
+<td>
+<label> Reason :</label></td>
+<td>			<textarea name="comments" maxlength="500"></textarea>
+</td>
+</tr>
+<tr>
+<td><label>Comments:</label></td>
+<td><textarea name="comments" maxlength="500"></textarea></td>
+</tr>
+<tr>
+<td style="float:right">
+<input  type="button" value="submit"></input>
+</td>
+<tr>
+</table>
+
+
+</p>
+</fieldset>
+</div>
+
+</div>
+
+<script> 
+$(function(){
+$("#left_panel").load("navigation.html"); 
+$("#header").load("header.html"); 
+$("#footer").load("footer.html"); 
+});
+</script>
+</body>
+</html>

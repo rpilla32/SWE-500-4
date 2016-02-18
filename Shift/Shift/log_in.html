@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shift Managment</title>
+<link rel="shortcut icon" type="image/ico" href="images/favicon.png">
+<link type="text/css" href="css/log_in_style.css" rel="stylesheet">
+<link href="css/main_style.css" rel="stylesheet" type="text/css" />
+
+
+
+<style type="text/css">
+    .divStyle {
+    width:300px;
+    height:150px;
+    margin:2px 2px 2px 0px;
+	padding-left:15px;
+	background-color:#FFFFFF;
+	border:#666666 1px dotted;
+	z-index:1;
+	position:absolute;
+    }
+    </style>     
+    <script language="javascript" type="text/javascript">
+    function displayDiv(imgName,divName)
+    {
+        var divstyle = new String();
+        divstyle = document.getElementById(divName).style.display;
+        if(divstyle.toLowerCase()=="block" || divstyle == "")
+        {
+            document.getElementById(divName).style.display = "none";
+			document.getElementById(imgName).src = 'images/plus.png';
+        }
+        else
+        {
+            document.getElementById(divName).style.display = "block";
+			document.getElementById(imgName).src = 'images/minus.png';							
+        }
+    }
+	function pageLoad()
+	{
+		document.getElementById("div1").style.display = "none";
+	}
+    </script>
+</head>
+
+<body onLoad="pageLoad();" class="back">
+	<div id="wrapper-login" style="height:auto;">
+    	<div id="header-login">
+        	<div class="logo"><a href="index.html" target="_parent"><img src="images/logo.png" width="auto" height="65" border="0"></a></div><!--logo-->
+            <div id="header-login-right">
+            <h3>Login</h3>
+           	  <form name="login-reg" action="Dashboard.html">
+              <table border="0" cellspacing="0" cellpadding="0" class="login-section">
+                  <tr>
+                    <td align="left" valign="top"><span class="bold">Email</span>
+                    <input class="txt1" type="text" name="textfield" id="textfield" /><!--<label class="error">Enter valid email address.</label>-->
+                    </td>
+                    <td align="left" valign="top"><span class="bold">Password</span>
+                    <input class="txt1" type="password" name="textfield2" id="textfield2" />
+                    </td>
+                    <td align="left" valign="top"><input type="submit" class="login_btn" border="0" /></td>
+                  </tr>
+                  
+                  <tr>
+                    <td colspan="2">
+                    <a href="#" onClick="displayDiv('img','div1')"><span class="bold">Forgot your password?</span></a>
+                    <div id="div1" class="divStyle">
+                    <table width="100%" border="0" cellspacing="2" cellpadding="2">
+                      <tr>
+                        <td><br />
+                        Enter your email username below.<br />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><input class="txt2" type="text" name="textfield5" id="textfield5" /></td>
+                      </tr>
+                      <tr>
+                        <td><input type="image" src="images/submit.jpg" width="51"  height="23" border="0" alt="SUBMIT!" /></td>
+                      </tr>
+                      <tr>
+                      	<td> We'll send you an email with  your password</td>
+                      </tr>
+                    </table>
+                   </div>
+                    </td>
+                    <td>&nbsp;</td>
+                  </tr>
+                </table>
+              </form>
+            </div><!--log_in_dv-->
+        </div><!--header-->
+        <div class="banner">
+        	<div class="div_left"><img src="images/girl.jpg" class="responsive-img"></div>
+        	<!--div_left-->
+
+            
+        </div><!--banner-->
+        <div align="right" class="log-footer clearfix">
+			<div align="right" id="footerright">
+            	<ul>
+                    <li class="no-padding"><a target="_blank" href="https://www.facebook.com/care.salebox.in"><img align="left" alt="" src="images/fb.png"></a></li>
+                </ul>
+            </div>
+            
+        </div>
+        
+</div><!--text_dv-->
+
+</body>
+</html>

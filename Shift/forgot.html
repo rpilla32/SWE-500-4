@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name = "format-detection" content = "telephone=no">
+<title>Shift Managment</title>
+<!-------------------Show Hide--------------->
+<style>
+.msg{ 
+display:none;
+position: relative;
+FONT-SIZE: 12px;
+font-family: Verdana;
+padding:10px;
+width:350px;
+background-color: #f1f1f1;
+}
+</style>
+<!-------------------Show Hide--------------->
+<link rel="icon" href="images/favicon.png" type="image/png" />
+<link href="css/main_style.css" rel="stylesheet" type="text/css" />
+<link href="css/ddsmoothmenu-v.css" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="css/easy-responsive-tabs.css" />
+<link rel="stylesheet" href="css/jquery.sidr.light.css"/>
+<script src="js/jquery-1.10.2.min.js"></script>
+<!--------------------------------Tabs------------------------------------------------------->        
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css">
+</head>
+<body>
+<div id="wrap">
+<!-- ................................................Header End........................................ -->
+<div id="clear"></div>
+<!-- ................................................Container Start........................................ -->
+<div id="container">
+<div id="header">
+
+</div>
+<!--navigation-->
+<a href="log_in.html" alt="home">Home</a><img src="images/icons/profile.png" alt="Home">
+<fieldset>
+
+<table>
+	<div id=d1 class='msg' >Password change request sent to your mail ID</div>
+	<legend>Forgot Password</legend>
+<h4>Enter the registered email.Id.</h4>
+
+<tr>
+<td style="text-align:center">
+<td><label>Email:</label>
+<input type="text"  >
+<input type="button" id="b1" value='Submit'><br><br>
+
+</td>
+</tr>
+</table>
+</fieldset>
+	
+
+		</form>
+
+
+<script>
+$(document).ready(function() {
+///// show /// 
+$('#b1').click(function(){
+
+if($('#b1').attr('value')=='Hide'){
+$(this).val('Create'); // change the value to Show
+$('#d1').hide();
+
+}else{
+
+$(this).val('Hide'); // change the value to Hide
+$('#d1').show();
+}
+
+})
+})
+</script>
+
+<script> 
+$(function(){
+$("#left_panel").load("navigation.html");
+$("#header").load("header.html"); 
+$("#footer").load("footer.html"); 
+});
+</script>
+</div>
+
+</div>
+</body>
+</html>
