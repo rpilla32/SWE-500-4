@@ -1,6 +1,3 @@
-#smoothmenu2{
-
-}
 .ddsmoothmenu-v ul{
 margin: 0;
 padding: 0;
@@ -31,7 +28,7 @@ color: #666666;
 
 
 .ddsmoothmenu-v ul li a.selected{ /*CSS class that's dynamically added to the currently active menu items' LI A element*/
-background-image:url(../images/menu_hover_bg.jpg);
+background-image:url(../images/vg.jpg);
 background-repeat:repeat-x;
 color: white;
 background: #4f5090;
@@ -43,9 +40,9 @@ color:#FFFFFF;
 }
 
 .ddsmoothmenu-v ul li a:hover{
-background-image:url(../images/menu_hover_bg2.jpg); /*background of menu items during onmouseover (hover state)*/
+background-image:url(../images/vg.jpg); /*background of menu items during onmouseover (hover state)*/
 color: #fff;
-background: #7e8db2;
+background: green;
 }
 
 /*Sub level menu items */
